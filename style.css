@@ -1,0 +1,28 @@
+body{
+    margin : 0 ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+header{
+    text-align: center;
+    font-weight: bold;
+    background-color: blueviolet;
+    color : black;
+    margin-top: 0;
+    width: 100%;
+
+}
+.main-photo {
+    display: block;
+    margin: 15px auto;
+    width: 90%;
+    height: 200px;
+    
+    
+    
+    /* أو نفس لون الهيدر */
+}
+
