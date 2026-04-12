@@ -13,6 +13,8 @@ header{
     color : black;
     margin-top: 0;
     width: 100%;
+    background-blend-mode: overlay;
+    padding: 10px 0 ;
 
 }
 .main-photo {
