@@ -10,7 +10,7 @@ header{
     text-align: center;
     font-weight: bold;
     background-color: blueviolet;
-    color : black;
+    color : white;
     margin-top: 0;
     width: 100%;
     background-blend-mode: overlay;
@@ -21,10 +21,56 @@ header{
     display: block;
     margin: 15px auto;
     width: 90%;
-    height: 200px;
-    
-    
-    
-    /* أو نفس لون الهيدر */
+    height: 400px;
+    object-fit: cover;
+    border:none;
+    border-radius: 4px;
 }
 
+.the_area{
+    width: 300px ;
+    margin: 5px auto;
+    padding:10px 15px ;
+    font-weight: bold;
+    border: solid 1px slategray;
+    border-radius: 3px ;
+
+}
+.Main-part{
+    background-color: #1b263b;
+    width: 100%
+}
+.recent-weather{
+    max-width: 400px;
+    height: 500px ;
+    color : white ;
+    text-align: center;
+    font-weight: bold ;
+    background-color: black;
+    border: solid 3px green;
+    border-radius: 3px ;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin: 15px auto;
+    padding: 10px 5px ;
+}
+.week-forecast{
+    max-width: 90%;
+    height: fit-content;
+    border: solid 3px green;
+    border-radius: 4px ;
+    display: flex;
+    margin: 10px auto;
+    background-color: white;
+    padding : 20px 30px ; 
+
+}
+.day{
+    width : 200px ;
+    text-align: center;
+    font-weight: bold;
+    /* now it is enough and we will complete tomorrow */
+}
