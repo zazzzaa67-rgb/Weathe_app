@@ -11,7 +11,8 @@
             <h1>Weather App</h1>
             <h2>for weather forecasts</h2>
             <img class="main-photo" src="photos/warm.jpg" alt="cloudy and nice sky">
-            <input class="the_area" type="text" placeholder="Please Enter your area">
+            <label for="user_area">City</label>
+            <input id="user_area" class="the_area" type="text" placeholder="Please Enter your City">
         </header>
         <section class="Main-part">
             <section class="recent-weather">
@@ -32,6 +33,13 @@
             <section class="the_status">
                 <!--I can add any News here about the weather or the clothe-->
             </section>
+            <fieldset>
+                <legend>Do you have any forecasts</legend>
+                <input type="radio" id="yes" >
+                <label for="yes" >Yes</label><br>
+                <input type="radio" id="no">
+                <label for="no">NO</label>
+            </fieldset>
                 
         </section>
         

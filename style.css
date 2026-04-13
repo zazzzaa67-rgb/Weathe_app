@@ -34,7 +34,7 @@ header{
     font-weight: bold;
     border: solid 1px slategray;
     border-radius: 3px ;
-
+    display: block;
 }
 .Main-part{
     background-color: #1b263b;
