@@ -1,76 +1,69 @@
-body{
-    margin : 0 ;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: linear-gradient(to top, #4facfe, #00f2fe);
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-}
-header{
-    text-align: center;
-    font-weight: bold;
-    background-color: blueviolet;
-    color : white;
-    margin-top: 0;
-    width: 100%;
-    background-blend-mode: overlay;
-    padding: 10px 0 ;
-
-}
-.main-photo {
-    display: block;
-    margin: 15px auto;
-    width: 90%;
-    height: 400px;
-    object-fit: cover;
-    border:none;
-    border-radius: 4px;
-}
-
-.the_area{
-    width: 300px ;
-    margin: 5px auto;
-    padding:10px 15px ;
-    font-weight: bold;
-    border: solid 1px slategray;
-    border-radius: 3px ;
-    display: block;
-}
-.Main-part{
-    background-color: #1b263b;
-    width: 100%
-}
-.recent-weather{
-    max-width: 400px;
-    height: 500px ;
-    color : white ;
-    text-align: center;
-    font-weight: bold ;
-    background-color: black;
-    border: solid 3px green;
-    border-radius: 3px ;
-    display: flex;
-    text-align: center;
-    justify-content: space-around;
     align-items: center;
-    flex-direction: column;
-    margin: 15px auto;
-    padding: 10px 5px ;
+    height: 100vh;
 }
-.week-forecast{
-    max-width: 90%;
-    height: fit-content;
-    border: solid 3px green;
-    border-radius: 4px ;
-    display: flex;
-    margin: 10px auto;
-    background-color: white;
-    padding : 20px 30px ; 
 
+/* الكارد الأساسية */
+.Main-part {
+    background: white;
+    width: 350px;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
-.day{
-    width : 200px ;
+
+/* الهيدر */
+header {
+    background: none;
+    color: black;
+}
+
+/* input + button */
+.the_area {
+    width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: #f1f1f1;
+}
+
+.Enter {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #4facfe;
+    color: white;
+    cursor: pointer;
+}
+
+/* الطقس الحالي */
+.recent-weather {
     text-align: center;
+    margin-top: 20px;
+}
+
+.the-temperature {
+    font-size: 40px;
     font-weight: bold;
-    /* now it is enough and we will complete tomorrow */
+}
+
+/* forecast */
+.week-forecast {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.day {
+    background: #f1f1f1;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    text-align: center;
 }
