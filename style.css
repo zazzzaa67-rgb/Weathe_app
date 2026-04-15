@@ -73,11 +73,14 @@ header {
     border-radius: 10px;
     font-size: 0.75rem;
     text-align: center;
+    margin-right: 0.125rem;
 }
 .the_area{
     display: flex;
     margin-top: 0.25rem;
     margin-bottom: 0.25rem;
     width : 250px ;
-
+}
+button{
+    font-weight: bold;
 }
