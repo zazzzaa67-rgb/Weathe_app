@@ -1,11 +1,9 @@
 body {
+    display:flex;
+    flex-direction: column;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, sans-serif;
-    background: linear-gradient(to top, #4facfe, #00f2fe);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    background: linear-gradient(#00f2fe, #4facfe);
 }
 
 /* الكارد الأساسية */
@@ -22,13 +20,13 @@ ul{
     list-style-type: none ;
 }
 
-/* الهيدر */
+
 header {
     background: none;
     color: black;
 }
 
-/* input + button */
+
 .the_area {
     width: 70%;
     padding: 10px;
@@ -84,3 +82,18 @@ header {
 button{
     font-weight: bold;
 }
+#news{
+    width:80%;
+    min-height: 400px ;
+    height: fit-content;
+    font-weight: bold;
+    color:black;
+    display:flex;
+    flex-direction: column;
+}
+.weather_forecaster{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+}
+/* We will complete the design tomorrow . starting by styling <nav> */
