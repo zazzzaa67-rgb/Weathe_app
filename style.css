@@ -5,26 +5,40 @@ body {
     font-family: 'Segoe UI', Tahoma, sans-serif;
     background: linear-gradient(#00f2fe, #4facfe);
 }
+ul{
+    list-style-type: none ;
+}
 
-/* الكارد الأساسية */
-.Main-part {
+
+
+header {
+    background: none;
+    color: black;
+    width: 100%;
+}
+
+#weather-app{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+.recent-weather {
     background: white;
     min-width: 350px;
     width: fit-content;
     border-radius: 20px;
     padding: 20px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-    margin-left: 4rem;
-}
-ul{
-    list-style-type: none ;
+    display : flex;
+    flex-direction: column;
+    font-weight: bold;
+    
 }
 
 
-header {
-    background: none;
-    color: black;
-}
 
 
 .the_area {
@@ -91,9 +105,14 @@ button{
     display:flex;
     flex-direction: column;
 }
-.weather_forecaster{
+nav  ul{
+    width : 100% ;
+    
+    margin-top: 0;
+    padding-top: 10px ;
+    padding-bottom: 10px ;
     display: flex;
     justify-content: space-around;
-    margin: 20px auto;
+    font-weight: bold;
+    color: black;
 }
-/* We will complete the design tomorrow . starting by styling <nav> */
