@@ -127,11 +127,36 @@ nav  ul{
     color: darkred;
 }
 .nav_link:active{
-    background-color: red !important;
+    background-color: blue !important;
     color: white;
 }
 .nav_link:focus{
     background-color: #4facfe;
     color:azure;
 }
-/* we will add Activ, hover,focus and visited tomorrow */
+span{
+    font-weight: bold;
+    color: darkorchid;
+    font-size: 25px;
+}
+h3 {
+    margin: 10px auto ;
+    font-size: 30px;
+    text-align: center;
+}
+.article{
+    width: 70%;
+    margin: 10px auto;
+    border: solid 2px rgb(19, 122, 226);
+    border-radius: 4px ;
+    box-shadow: 5px 5px 20px  black ;
+    background-color: white;
+    min-height: 300px;
+    height: fit-content;
+}
+.section2{
+    margin: 15px auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
