@@ -3,7 +3,10 @@ body {
     flex-direction: column;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, sans-serif;
-    background: linear-gradient(#00f2fe, #4facfe);
+    background: linear-gradient(#0be5f1, #4facfe);
+}
+p{
+    line-height:23px ;
 }
 ul{
     list-style-type: none ;
@@ -12,9 +15,11 @@ header {
     background: none;
     color: black;
     width: 100%;
+    flex-wrap: wrap;
 }
 #weather-app{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     margin: 0;
@@ -126,11 +131,7 @@ nav  ul{
     background-color: pink;
     color: darkred;
 }
-.nav_link:active{
-    background-color: blue !important;
-    color: white;
-}
-.nav_link:focus{
+.nav_link:focus .nav_link:active{
     background-color: #4facfe;
     color:azure;
 }
@@ -159,4 +160,46 @@ h3 {
     align-items: center;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
 }
+.map{
+    background-image: url("photos/location.jpg");
+    background-size: cover;
+    width:70%;
+    height: 500px;
+    display: block;
+    margin: 15px auto ;
+    border:none;
+    border-radius: 4px;
+}
+#sign-up{
+    width: 400px;
+    height: fit-content;
+    overflow-wrap: break-word;
+    min-height: 500px ;
+    height: fit-content;
+    background-color: aliceblue;
+    border: solid 2px black;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    box-shadow: 0px 0px 3px black;
+    margin: 15px auto;
+    padding : 15px 20px ;
+    text-align: center;
+    align-items: center;
+}
+.sing-detail{
+    min-width : 200px ;
+    line-height: 23px;
+    width: fit-content;
+
+    
+    font-weight: bold;
+    border: solid 2px black;
+    border-radius: 2px ;
+}
+/* we will practice on multiple classes tomorrow*/
+/* we will practice flex-wrap too */
