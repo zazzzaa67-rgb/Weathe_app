@@ -14,8 +14,8 @@ ul{
 header {
     background: none;
     color: black;
-    width: 100%;
     flex-wrap: wrap;
+    width: 100%;
 }
 #weather-app{
     display: flex;
@@ -36,7 +36,8 @@ header {
     display : flex;
     flex-direction: column;
     font-weight: bold;
-    
+    text-align: center;
+    margin-top: 30px;
 }
 
 
@@ -44,7 +45,7 @@ header {
 
 .the_area {
     width: 70%;
-    padding: 10px;
+    padding: 10px 15px ;
     border-radius: 10px;
     border: none;
     outline: none;
@@ -62,12 +63,6 @@ header {
     
 }
 
-/* الطقس الحالي */
-.recent-weather {
-    text-align: center;
-    margin-top: 20px;
-}
-
 .the-temperature {
     font-size: 2.5rem;
     font-weight: bold;
@@ -78,6 +73,7 @@ header {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 .day {
@@ -105,20 +101,22 @@ button{
     color:black;
     display:flex;
     flex-direction: column;
+    margin: 6px auto;
 }
 nav  ul{
     width : 100% ;
     margin: 0;
-    padding-top: 10px ;
     padding-bottom: 10px ;
     display: flex;
     justify-content: space-around;
     font-weight: bold;
     color: black;
     padding-top: 20px;
+    padding-left: 0;
+    padding-right: 0;
+
 }
 .nav_link{
-    width: 50px ;
     padding: 10px 15px ;
     font-weight: bold;
     border: solid 2px #4facfe;
@@ -131,7 +129,7 @@ nav  ul{
     background-color: pink;
     color: darkred;
 }
-.nav_link:focus .nav_link:active{
+.nav_link:focus , .nav_link:active{
     background-color: #4facfe;
     color:azure;
 }
@@ -141,12 +139,12 @@ span{
     font-size: 25px;
 }
 h3 {
-    margin: 10px auto ;
+    margin: 0px auto ;
     font-size: 30px;
     text-align: center;
 }
 .article{
-    width: 70%;
+    width: min(90%, 700px);
     margin: 10px auto;
     border: solid 2px rgb(19, 122, 226);
     border-radius: 4px ;
@@ -156,7 +154,6 @@ h3 {
     height: fit-content;
 }
 .section2{
-    margin: 15px auto;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -173,13 +170,11 @@ h3 {
     border:none;
     border-radius: 4px;
 }
-#sign-up{
-    width: 400px;
+.sign-up-container{
+    width: 350px;
+    height: 500px ;
     height: fit-content;
-    overflow-wrap: break-word;
-    min-height: 500px ;
-    height: fit-content;
-    background-color: aliceblue;
+    background-color:white;
     border: solid 2px black;
     border-radius: 3px;
     display: flex;
@@ -201,5 +196,11 @@ h3 {
     border: solid 2px black;
     border-radius: 2px ;
 }
+#location , 
+#about ,
+#sign-up{
+    width: 100%;
+}
+
 /* we will practice on multiple classes tomorrow*/
 /* we will practice flex-wrap too */
