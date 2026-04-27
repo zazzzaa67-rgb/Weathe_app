@@ -152,6 +152,9 @@ h3 {
     background-color: white;
     min-height: 300px;
     height: fit-content;
+    padding : 10px 15px ; 
+    line-height: 23px ;
+    font-weight: 500;
 }
 .section2{
     align-items: center;
@@ -170,19 +173,29 @@ h3 {
     border:none;
     border-radius: 4px;
 }
-.sign-up-container{
+#sign-up{
     width: 350px;
     height: 500px ;
-    background-color: #fff;
-    border: solid 2px #252525;
+    background-color: #252525;
+    border: solid 2px #ffffff;
+    color : #ffffff; 
     border-radius: 3px;
-    display: flex;
+    display: none;
     flex-direction: column;
     font-weight: bold;
     box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
-    margin: 30px auto;
-    padding : 15px 20px ;
     align-items: center;
+    justify-content: center;
+    position: fixed;
+    top : 0 ;
+    right: 0 ;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 15px 25px;
+}
+.Main-part{
+    position: relative;
 }
 .sing-detail{
     min-width : 250px ;
@@ -195,8 +208,19 @@ h3 {
 }
 #location , 
 #about ,
-#sign-up{
+#sign-up-container{
     width: 100%;
+}
+#symbol{
+    position: absolute;
+    top : 6px ; 
+    right: 4px ;
+    background-color: #252525;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    font-size: large;
 }
 /* practice position  */
 
