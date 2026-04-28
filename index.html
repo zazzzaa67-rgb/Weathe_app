@@ -87,25 +87,44 @@
             <section id="sign-up-section">
                 <div id="sign-up">
                     <button id="symbol">✖</button>
-                    <h3>Sign <span>up 😊</span></h3>
-                    <div class="card">
-                        <h4>Sign up</h4>
-                        <label for="first_name">Name</label><br>
-                        <input class="sing-detail" id="first_name" type="text" placeholder="Ahmed" alt="your first name" required><br>
-                        <label  for="full_name">Full name</label><br>
-                        <input class="sing-detail" id="full_name" type="text" placeholder="Ahmed Mohamed" alt="your fullname" required><br>
-                        <label for="Email">Email</label><br>
-                        <input class="sing-detail" id="Email" placeholder="Ahmed@.com" alt="your Email" required><br>
-                        <label for="password">Password</label><br>
-                        <input class="sing-detail" id="password" placeholder="11232#$%" alt="" required>
-                    </div>
-                    <fieldset>
-                        <legend>Do you have a cat ? 😊😊</legend>
-                        <label for="yes">Yes</label>
-                        <input id="yes" type="radio">
-                        <label for="no">No</label>
-                        <input id="no" type="radio">
-                    </fieldset>
+                    <h3 id="sign-up-title">Sign <span>up 😊</span></h3>
+                    <form id="card">
+                        <div class="user-input">
+                            <label for="first_name">Name</label><br>
+                            <input class="sing-detail" 
+                            id="first_name" type="text"
+                            placeholder="Ahmed" 
+                            alt="your first name" 
+                            required
+                            minlength="3" 
+                            maxlength="8"
+                            pattern="[a-zA-z]"
+                            >
+                        </div>
+                        <div class="user-input">
+                            <label  for="full_name">Full name</label><br>
+                            <input class="sing-detail" 
+                            id="full_name" 
+                            type="text" 
+                            placeholder="Ahmed Mohamed" 
+                            alt="your fullname" 
+                            required
+                            pattern="[a-zA-Z]">
+                        </div>
+                        <div class="user-input">
+                            <label for="Email">Email</label><br>
+                            <input class="sing-detail" id="Email" placeholder="Ahmed@.com" alt="your Email" required>
+                        </div>
+                        <div class="user-input">
+                            <label for="password">Password</label><br>
+                            <input class="sing-detail" 
+                            id="password" 
+                            placeholder="11232#$%" alt=""
+                            required 
+                            pattern="[a-zA-Z1-10]{10}" >
+                        </div>
+                        <input type="submit" id="submit" placeholder="Submit">
+                    </form>    
                 </div>
             </section>
         </section>        
