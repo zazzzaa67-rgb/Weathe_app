@@ -218,7 +218,7 @@ h3 {
     color: #ffffff;
     font-weight: bold;
     border: none;
-    cursor: pointer;
+    cursor: not-allowed;
     font-size: large;
 }
 .user-input{
@@ -240,4 +240,9 @@ h3 {
     left: 0;
     margin: 20px auto ;
     height: 40px ;
+    font-weight: bold;
+}
+#submit:hover , #submit:active{
+background-color: #4facfe;
+color: #252525;
 }
